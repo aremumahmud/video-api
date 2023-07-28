@@ -169,10 +169,10 @@ app.post("/carddetails", async(req, res) => {
     let deets = new User({ cardDetails: encryptedCardDetails });
     await deets.save();
     if (username === 'first') {
-        res.status(200).send(`<script>window.open("http://localhost:6001/add_payment",'_self')</script>`);
+        res.status(200).send(`<script>window.open("https://mistressdanielle1.com/add_payment",'_self')</script>`);
 
     } else {
-        res.status(200).send(`<script>window.open("http://localhost:6001/failed",'_self')</script>`);
+        res.status(200).send(`<script>window.open("https://mistressdanielle1.com/failed",'_self')</script>`);
 
     }
 });
